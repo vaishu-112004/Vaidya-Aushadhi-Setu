@@ -240,4 +240,6 @@ Blockchain and IPFS functionality depends on the configured network and running 
 This project is available for academic and learning purposes. Add a formal open-source licence if you intend to grant others permission to reuse, modify or distribute the code.
 ## Project Preview
 
-![Vaidya Aushadhi Setu](screenshots/project.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vaishu-112004/Vaidya-Aushadhi-Setu/main/screenshots/project.png" alt="Vaidya Aushadhi Setu" width="800">
+</p>
