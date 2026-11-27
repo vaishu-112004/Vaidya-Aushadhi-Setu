@@ -1,0 +1,11 @@
+
+flask
+streamlit
+mysql-connector-python
+web3
+requests
+qrcode
+opencv-python
+pillow
+opencv-python
+opencv-python

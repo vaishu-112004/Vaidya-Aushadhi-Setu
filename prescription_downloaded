@@ -1,0 +1,1 @@
+{"doctor_id": 8, "patient_id": 9, "medicines": [{"medicine_name": "paracetamol", "dosage": "", "morning": false, "afternoon": true, "night": true, "duration_days": 5, "instructions": "take care"}]}

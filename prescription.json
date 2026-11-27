@@ -1,0 +1,1 @@
+{"doctor_id": 5, "patient_id": 4.0, "medicines": [{"medicine_name": "parcetomal", "dosage": "500g", "morning": true, "afternoon": false, "night": true, "duration_days": 5, "instructions": "take proper"}]}

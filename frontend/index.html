@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102c25">
+  <title>Vaidya Aushadhi Setu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">✚</div>
+      <div class="brand-copy">
+        <strong>Vaidya</strong>
+        <small>AUSHADHI SETU</small>
+      </div>
+    </div>
+
+    <div class="side-label">WORKSPACE</div>
+
+    <nav id="nav" aria-label="Main navigation">
+      <button class="nav-item active" type="button" data-page="overview">
+        <span>⌂</span> Overview
+      </button>
+      <button class="nav-item" type="button" data-page="prescriptions">
+        <span>▤</span> Prescriptions
+      </button>
+      <button class="nav-item" type="button" data-page="verify">
+        <span>⌗</span> Verify medicine
+      </button>
+      <button class="nav-item" type="button" data-page="history">
+        <span>◷</span> Activity history
+      </button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="help-card">
+        <span class="help-icon">♡</span>
+        <strong>Medicine safety first</strong>
+        <p>Verify every prescription before dispensing medicines.</p>
+        <div class="help-line"><span></span> Secure workspace</div>
+      </div>
+
+      <button id="logout" class="logout" type="button">
+        <span>↪</span> Sign out
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-area">
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu">☰</button>
+        <div class="crumb">
+          VAIDYA AUSHADHI SETU
+          <span>/</span>
+          <b id="pageName">Overview</b>
+        </div>
+      </div>
+
+      <div class="top-right">
+        <span class="status-dot"></span>
+        <span class="system-status">LOCAL SYSTEM</span>
+        <div class="avatar" id="avatar">V</div>
+      </div>
+    </header>
+
+    <section class="content" id="content">
+
+      <section class="auth-screen" id="authScreen">
+
+        <div class="auth-art">
+          <div class="art-topline">
+            <span class="art-mini-mark">✚</span>
+            DIGITAL HEALTHCARE • BLOCKCHAIN
+          </div>
+
+          <div class="art-orbit orbit1"></div>
+          <div class="art-orbit orbit2"></div>
+          <div class="art-cross">✚</div>
+
+          <div class="art-pills">
+            <span>RX</span>
+            <span>✓</span>
+            <span>+</span>
+          </div>
+
+          <div class="art-caption">
+            <div class="eyebrow light">TRUST IN EVERY PRESCRIPTION</div>
+            <h2>Trusted medicines.<br><em>Transparent care.</em></h2>
+            <p>
+              Connecting doctors, patients and pharmacists
+              through secure prescription verification.
+            </p>
+            <div class="art-foot">
+              <span></span>
+              A safer medicine supply chain starts here
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-panel">
+
+          <div class="auth-brand">
+            <div class="brand-mark">✚</div>
+            <span>VAIDYA <b>AUSHADHI SETU</b></span>
+          </div>
+
+          <div class="auth-kicker">WELCOME TO YOUR SECURE PORTAL</div>
+
+          <div class="auth-tabs">
+            <button class="selected" id="loginTab" type="button">Sign in</button>
+            <button id="signupTab" type="button">Create account</button>
+          </div>
+
+          <h1 id="authTitle">Welcome back</h1>
+
+          <p class="muted" id="authSubtitle">
+            Sign in to continue to your workspace.
+          </p>
+
+          <form id="authForm">
+
+            <div id="signupFields" class="hidden">
+
+              <label>
+                Full name
+                <input name="name" type="text" placeholder="Your full name">
+              </label>
+
+              <label>
+                Role
+                <select name="role">
+                  <option value="patient">Patient</option>
+                  <option value="doctor">Doctor</option>
+                  <option value="pharmacist">Pharmacist</option>
+                </select>
+              </label>
+
+              <label>
+                License number (doctor / pharmacist)
+                <input name="license_no" type="text" placeholder="Professional license">
+              </label>
+
+              <label>
+                License expiry
+                <input name="license_expiry" type="date">
+              </label>
+
+            </div>
+
+            <label>
+              Email address
+              <input name="email" type="email" placeholder="name@example.com" required>
+            </label>
+
+            <label>
+              Password
+              <input name="password" type="password" placeholder="Enter password" required>
+            </label>
+
+            <button class="primary full" type="submit" id="authSubmit">
+              <span>Sign in</span>
+              <b>→</b>
+            </button>
+
+          </form>
+
+          <div class="auth-note">
+            <span class="lock-icon">▣</span>
+            Local Flask backend connection · Protected workspace
+          </div>
+
+          <div id="authMessage" class="message"></div>
+
+        </div>
+      </section>
+
+      <div id="dashboard" class="hidden">
+
+        <div class="welcome-row">
+          <div>
+            <div class="eyebrow">YOUR WORKSPACE</div>
+            <h1 id="welcomeTitle">Good day</h1>
+            <p class="muted" id="welcomeText">
+              Manage prescriptions and medicine verification.
+            </p>
+          </div>
+
+          <div class="role-chip" id="roleChip">Patient account</div>
+        </div>
+
+        <div class="stat-grid" id="stats"></div>
+
+        <div class="page-grid">
+          <div class="panel main-panel" id="mainPanel"></div>
+          <div class="panel side-panel" id="sidePanel"></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+</body>
+</html>
