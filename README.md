@@ -238,3 +238,6 @@ Blockchain and IPFS functionality depends on the configured network and running 
 ## 14. License
 
 This project is available for academic and learning purposes. Add a formal open-source licence if you intend to grant others permission to reuse, modify or distribute the code.
+## Project Preview
+
+![Vaidya Aushadhi Setu](screenshots/project.png)
